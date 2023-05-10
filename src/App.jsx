@@ -43,7 +43,7 @@ function App() {
           <p>تعداد مقالات</p>
         </div> */}
             <div ref={myRef}>
-      <CountUp start={0} end={100} duration={2} redraw={true} startOnMount={false} preserveValue={true} decimals={0} suffix={"%"}/>
+      <CountUp start={0} end={100} duration={6} redraw={true} startOnMount={false} preserveValue={true} decimals={0} suffix={"%"}/>
     </div>
       </div>
       <Articles />

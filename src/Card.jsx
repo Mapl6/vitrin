@@ -12,7 +12,7 @@ const Card = () => {
         <div className="card-header">
             <img className="card-bg" src={bg}  />
             <img className="card-logo" src={img1}  />
-        </div>
+        </div>            
         <div className="card-title">
         Prospects and challenges of cancer systems medicine: from genes to disease networks
         </div>

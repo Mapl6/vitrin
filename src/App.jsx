@@ -4,7 +4,7 @@ import Slider from "./header/Slider";
 import CountUp from "react-countup";
 
 import Articles from "./Articles";
-
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
         </div>
       </div>
       <Articles />
-
+      <Footer />
     </>
   );
 }

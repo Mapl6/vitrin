@@ -1,0 +1,277 @@
+@font-face {
+  font-family: BYekan;
+  src: local("BYekan"), url(./assets/BYekan.ttf) format("truetype");
+}
+#app {
+  height: 100%;
+}
+css
+Copy
+/* Set up basic styles */
+html,
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: BYekan, Arial, sans-serif;
+  font-size: 14px;
+  color: #4a7cfe;
+}
+
+/* Set up background color */
+body {
+  background: #fffcfe;
+}
+
+/* Set up navbar styles */
+.navbar {
+  background-color: #fffcfe;
+  margin-top: 0;
+  width: 100%;
+  height: 100px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  width: 100px;
+  height: 90px;
+  margin-top: 3px;
+}
+
+/* Set up nav link styles */
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-link li {
+  margin-left: 15px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliders img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sliders {
+  position: relative;
+}
+.ab-slider {
+  width: 600px;
+  height: 150px;
+  position: absolute;
+  top: -80px;
+}
+.ab-slider img {
+  width: 160px;
+  border-radius: 5px;
+}
+.top-slider {
+  position: relative;
+}
+.top-slider p {
+  font-size: 20px;
+  position: absolute;
+  right: 650px;
+  top: 75px;
+}
+
+.articles {
+  height: 900px;
+  position: relative;
+  margin: 40px;
+}
+
+.articles .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
+  background: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px !important;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px !important;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40%;
+}
+
+.card-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.card-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 27%;
+  right: 35%;
+}
+
+.card-icons img {
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+}
+
+.countup {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: xx-large;
+  margin: 50px 0;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #e1e1e1, #f8f8f8);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.countup div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+  height: 250px;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Helvetica Neue", sans-serif;
+  color: #333;
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 30px;
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  direction: rtl;
+}
+
+.address {
+  flex-basis: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.address h6 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.address p {
+  margin-bottom: 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: calc(100% - 300px);
+}
+
+.phone,
+.sms,
+.fax,
+.email {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.phone svg,
+.sms svg,
+.fax svg,
+.email svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  fill: #666;
+}
+
+.sms svg {
+  fill: #ff6600;
+}
+
+.email span {
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .address {
+    flex-basis: auto;
+    margin-right: 20px;
+  }
+
+  .contact-info {
+    width: auto;
+    max-width: none;
+  }
+
+  .phone,
+  .sms,
+  .fax {
+    margin-right: 20px;
+  }
+
+  .email {
+    margin-left: 20px;
+  }
+}

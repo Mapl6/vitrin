@@ -5,13 +5,16 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-
+import samanrashidiimg from "../assets/img/samanrashidi.jpg";
+import amjadyimg from "../assets/img/amjady.jpg";
+import sadodinimg from "../assets/img/ssadodin.jpg";
+import meshaghiimg from "../assets/img/meshaghi.jpg";
+import msvalipourimg from "../assets/img/msvalipour.jpg";
+import fhormoziimg from "../assets/img/fhormozi.jpg";
 import img1 from "../assets/img/header-slide1.jpg";
 import img2 from "../assets/img/header-slide2.jpg";
 import img3 from "../assets/img/header-slide3.jpg";
-import person1 from "../assets/img/1.jpg";
-import person2 from "../assets/img/2.jpg";
-import person3 from "../assets/img/3.jpg";
+
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
@@ -53,16 +56,17 @@ const Slider = () => {
           modules={[Pagination]}
           className="ab-slider"
         >
-          <SwiperSlide><img src={person1} /></SwiperSlide>
-          <SwiperSlide><img src={person2} /></SwiperSlide>
-          <SwiperSlide><img src={person3} /></SwiperSlide>
-          <SwiperSlide><img src={person1} /></SwiperSlide>
-          <SwiperSlide><img src={person2} /></SwiperSlide>
-          <SwiperSlide><img src={person3} /></SwiperSlide>
+          <SwiperSlide><img src={samanrashidiimg} /></SwiperSlide>
+          <SwiperSlide><img src={amjadyimg} /></SwiperSlide>
+          <SwiperSlide><img src={sadodinimg} /></SwiperSlide>
+          <SwiperSlide><img src={meshaghiimg} /></SwiperSlide>
+          <SwiperSlide><img src={msvalipourimg} /></SwiperSlide>
+          <SwiperSlide><img src={fhormoziimg} /></SwiperSlide>
+
           </Swiper>
-        <p>
+        <span>
           یک درصد برتر
-        </p>
+        </span>
       </div>
     </div>
   );

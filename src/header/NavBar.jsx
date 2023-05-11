@@ -5,8 +5,9 @@ const NavBar = () => {
         <ul className="nav-link">
             <li>خانه</li>
             <li>یک درصد برتر</li>
-            <li>مقلات برتر</li>
-            <li>کلید واژه های تخصصی</li>
+            <li>مقالات پراستناد</li>
+            <li>آمار و ارقام</li>
+            <li>مقالات اخیر</li>
             
         </ul>
         <img src={logo} />

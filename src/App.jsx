@@ -14,9 +14,11 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       const top = myRef.current.getBoundingClientRect().top;
+      console.log(top);
       const bottom = window.innerHeight;
-      if (top < bottom && !isCounting) {
-        setIsCounting(true);
+      console.log(bottom);
+      if (top < bottom ) {
+        setIsCounting(!isCounting);
       }
     };
     window.addEventListener('scroll', handleScroll);
@@ -28,24 +30,28 @@ function App() {
     <>
       <NavBar />
       <Slider />
+      <span>مقالات پراستناد
+      </span>
       <Articles />
-      <div className="countup">
-        {/* <div>
-          <CountUp start={0} end={1205} duration={10} />
+      <div className="countup" >
+        <div>
+          <CountUp start={0} end={1205} duration={15} />
           <p>تعداد مقالات</p>
         </div>
         <div>
-          <CountUp start={0} end={1675} duration={10} />
+          <CountUp start={0} end={1675} duration={15} />
           <p>تعداد مقالات</p>
         </div>
         <div>
           <CountUp start={0} end={234} duration={10} />
           <p>تعداد مقالات</p>
-        </div> */}
-            <div ref={myRef}>
+        </div>
+            {/* <div ref={myRef}>
       <CountUp start={0} end={100} duration={6} redraw={true} startOnMount={false} preserveValue={true} decimals={0} suffix={"%"}/>
-    </div>
+    </div> */}
       </div>
+      <span>مقالات اخیر
+      </span>
       <Articles />
       <Footer />
     </>

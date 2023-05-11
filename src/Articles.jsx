@@ -1,6 +1,6 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import data from "./assets/data.js"
 import Card from './Card';
 import "swiper/css";
 import "swiper/css/grid";
@@ -23,18 +23,20 @@ const Articles = () => {
         className="mySwiper"
         
       >
-        <SwiperSlide><Card/></SwiperSlide>
-        <SwiperSlide><Card/></SwiperSlide>
-        <SwiperSlide><Card/></SwiperSlide>
-        <SwiperSlide><Card/></SwiperSlide>
-        <SwiperSlide><Card/></SwiperSlide>
-        <SwiperSlide><Card/></SwiperSlide>
-        <SwiperSlide><Card/></SwiperSlide>
-        <SwiperSlide><Card/></SwiperSlide>
-        <SwiperSlide><Card/></SwiperSlide>
-        <SwiperSlide><Card/></SwiperSlide>
-        <SwiperSlide><Card/></SwiperSlide>
-        <SwiperSlide><Card/></SwiperSlide>
+          {data.map((item, index) => (
+        <SwiperSlide>
+        <Card
+          key={index}
+          img={item.img}
+          title={item.title}
+          g_scholar={item.g_scholar}
+          reaseach={item.reseacher}
+          email={item.email}
+          website={item.website}
+          scopus={item.scopus}
+        />
+        </SwiperSlide>
+      ))}
       </Swiper>
 </div>
   )

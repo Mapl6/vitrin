@@ -21,7 +21,6 @@ body {
 /* Navbar */
 .navbar {
   background-color: #7AB2E2;
-  margin-top: 0;
   width: 100%;
   height: 100px;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
@@ -29,30 +28,26 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
 .navbar img {
   width: 100px;
   height: 90px;
   margin-top: 3px;
 }
 
-/* Navigation links */
 .nav-link {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin: 0;
-  padding: 0;
   list-style-type: none;
+  padding: 0;
 }
 
 .nav-link li {
-  margin-left: 15px;
+  margin-right: 10px;
   font-size: 18px;
-  margin-top: 20px;
 }
-
-/* Swiper and sliders */
+/* end nav */
+/* header slider */
 .swiper {
   width: 100%;
   height: 100%;
@@ -60,32 +55,17 @@ body {
   margin-right: auto;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.sliders {
-  position: relative;
-}
-
 .sliders img {
-  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fit;
 }
-
-/* Additional sliders */
+/* end header slider */
+/* top of sliders */
 .ab-slider {
   width: 600px;
   height: 150px;
-  position: absolute;
-  top: -80px;
+  margin-top: -200px;
 }
 
 .ab-slider img {
@@ -93,10 +73,7 @@ body {
   height: 150px;
   border-radius: 5px;
 }
-
-/* Top slider */
 .top-slider {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,9 +84,8 @@ body {
 .top-slider span {
   font-size: 35px;
   color: #2e4e6e;
-  margin-top: -70px;
 }
-
+/* end top of sliders */
 /* Articles */
 .articles {
   height: 650px;
@@ -160,16 +136,14 @@ body {
   height: 70px;
   border-radius: 50%;
   border: solid 6px #F7F7F5;
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(-100%);
+  margin-top: -40px;
+  margin-right: 80px;
 }
 
 .card-icons img {
   width: 25px;
   height: 25px;
-  margin: 5px;
+
 }
 
 /* Countup */
@@ -179,12 +153,14 @@ body {
   justify-content: space-around;
   flex-direction: column;
   font-size: xx-large;
-  margin: 50px -15px; 
+  /* margin: 50px -15px;  */
   padding: 20px;
+
 }
 
 .countup-main {
   display: flex;
+
 }
 .countup-main div {
   align-items: center;
@@ -195,9 +171,9 @@ body {
   height: 250px;
   border-radius: 10px;
   background-color: #7AB2E2;
-  margin: 10px;
+  margin: 2px;
   padding: 20px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -296,7 +272,7 @@ body {
 
 
 .scroller{
-  height: 850px;
+  height: 830px;
 overflow-y: scroll;
 scroll-snap-type: y mandatory;
 }

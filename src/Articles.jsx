@@ -24,7 +24,7 @@ const Articles = () => {
         
       >
           {data.map((item, index) => (
-        <SwiperSlide>
+        <SwiperSlide style={{width:"300px"}}>
         <Card
           key={index}
           img={item.img}

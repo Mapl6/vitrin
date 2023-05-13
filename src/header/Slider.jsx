@@ -56,7 +56,7 @@ const Slider = () => {
           modules={[Pagination]}
           className="ab-slider"
         >
-          <SwiperSlide><img src={samanrashidiimg} /></SwiperSlide>
+          <SwiperSlide ><img src={samanrashidiimg} /></SwiperSlide>
           <SwiperSlide><img src={amjadyimg} /></SwiperSlide>
           <SwiperSlide><img src={sadodinimg} /></SwiperSlide>
           <SwiperSlide><img src={meshaghiimg} /></SwiperSlide>

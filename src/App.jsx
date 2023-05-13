@@ -30,27 +30,27 @@ function App() {
     <>
       <NavBar />
       <Slider />
-      <span>مقالات پراستناد
+      <span className="section-title">مقالات پراستناد
       </span>
       <Articles />
       <div className="countup" >
         <div>
-          <CountUp start={0} end={1205} duration={15} />
-          <p>تعداد مقالات</p>
+          <CountUp start={0} end={683} duration={10} />
+          <p>تعداد کل مقالات</p>
         </div>
         <div>
-          <CountUp start={0} end={1675} duration={15} />
-          <p>تعداد مقالات</p>
+          <CountUp start={0} end={198} duration={5} />
+          <p>تعدادمقالات پراستناد</p>
         </div>
         <div>
-          <CountUp start={0} end={234} duration={10} />
-          <p>تعداد مقالات</p>
+          <CountUp start={0} end={37} duration={10} />
+          <p>تعداد مقالات اخیر </p>
         </div>
             {/* <div ref={myRef}>
       <CountUp start={0} end={100} duration={6} redraw={true} startOnMount={false} preserveValue={true} decimals={0} suffix={"%"}/>
     </div> */}
       </div>
-      <span>مقالات اخیر
+      <span className="section-title">مقالات اخیر
       </span>
       <Articles />
       <Footer />

@@ -3,14 +3,16 @@ import gs from "./assets/img/g-scholar.png";
 import rg from "./assets/img/rg.png";
 import email from "./assets/img/email.png";
 import ws from "./assets/img/ws.png";
+import img3 from "./assets/img/header-slide3.jpg";
 
 const Card = (props) => {
   return (
     <div className="card">
       <div className="card-header">
-        <img className="card-bg" src={bg} alt="" />
+        <img className="card-bg" src={img3} alt="" />
         <img className="card-logo" src={props.img} alt="" />
       </div>
+      <div className="card-name">{props.prof}</div>
       <div className="card-title">{props.title}</div>
       <div className="card-icons">
         <a href={props.g_scholar}>

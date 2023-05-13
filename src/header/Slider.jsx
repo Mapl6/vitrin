@@ -21,7 +21,7 @@ import { Pagination, Navigation } from "swiper";
 const Slider = () => {
   return (
     <div className="sliders">
-      <Swiper
+      <Swiper style={{height:"500px"}}
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
@@ -46,7 +46,7 @@ const Slider = () => {
 
       <div className="top-slider">
         <Swiper
-          slidesPerView={4}
+          slidesPerView={3}
           centeredSlides={true}
           spaceBetween={60}
           grabCursor={true}
@@ -56,12 +56,12 @@ const Slider = () => {
           modules={[Pagination]}
           className="ab-slider"
         >
-          <SwiperSlide ><img src={samanrashidiimg} /></SwiperSlide>
-          <SwiperSlide><img src={amjadyimg} /></SwiperSlide>
-          <SwiperSlide><img src={sadodinimg} /></SwiperSlide>
-          <SwiperSlide><img src={meshaghiimg} /></SwiperSlide>
-          <SwiperSlide><img src={msvalipourimg} /></SwiperSlide>
-          <SwiperSlide><img src={fhormoziimg} /></SwiperSlide>
+          <SwiperSlide style={{height:"150px",width:"160px",borderRadius:"5px"}}><img src={samanrashidiimg} /></SwiperSlide>
+          <SwiperSlide style={{height:"150px",width:"160px",borderRadius:"5px"}}><img src={amjadyimg} /></SwiperSlide>
+          <SwiperSlide style={{height:"150px",width:"160px",borderRadius:"5px"}}><img src={sadodinimg} /></SwiperSlide>
+          <SwiperSlide style={{height:"150px",width:"160px",borderRadius:"5px"}}><img src={meshaghiimg} /></SwiperSlide>
+          <SwiperSlide style={{height:"150px",width:"160px",borderRadius:"5px"}}><img src={msvalipourimg} /></SwiperSlide>
+          <SwiperSlide style={{height:"150px",width:"160px",borderRadius:"5px"}}><img src={fhormoziimg} /></SwiperSlide>
 
           </Swiper>
         <span>

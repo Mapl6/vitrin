@@ -2,14 +2,18 @@
   font-family: BYekan;
   src: local("BYekan"), url(./assets/BYekan.ttf) format("truetype");
 }
+
 #app {
-  height: 100%;
+height: 100%;
 }
 css
 Copy
 /* Set up basic styles */
 html,
 body {
+
+
+
   position: relative;
   height: 100%;
   margin: 0;
@@ -94,8 +98,10 @@ body {
 }
 .ab-slider img {
   width: 160px;
+  height: 150px;
   border-radius: 5px;
 }
+
 .top-slider {
   position: relative;
   display: flex;
@@ -106,15 +112,14 @@ body {
 }
 .top-slider span {
   font-size: 35px;
-  color: #ff6600;
+  color: #2e4e6e;
+  margin-top: -70px;
 
 }
 
 .articles {
-  height: 900px;
-  position: relative;
+  height: 650px;
   padding: 24px;
-
   background-color: #2E4E6E;
 }
 
@@ -122,7 +127,7 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  height: calc((100% - 30px) / 2) !important;
+  /* height: calc((100% - 30px) / 2) !important; */
   background: #f8f8f8;
   display: flex;
   justify-content: center;
@@ -136,7 +141,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-width: 100%;
+  width: 100%;
   height: 100%;
   border-radius: 15px !important;
 }
@@ -157,33 +162,37 @@ width: 100%;
 }
 
 .card-logo {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   border: solid 6px #F7F7F5;
   position: absolute;
-  top: 27%;
+  top: 33%;
   right: 37%;
 }
 
 .card-icons img {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   margin: 5px;
 }
 
 .countup {
-  width: 100%;
+  height: 500px;
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
   font-size: xx-large;
-  margin: 50px -15px;
-  padding: 20px;
+  margin: 50px -15px; 
+padding: 20px;
 
 
 }
-
-.countup div {
+.countup-main{
+  display: flex;
+  
+}
+.countup-main div {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -278,4 +287,25 @@ width: 100%;
   margin: 10px;
   padding: 10px;
   color: #2E4E6E;
+}
+.card-title{
+  padding: 4px;
+  margin: 2px;
+  font-size: 20px;
+}
+.card-name{
+  color: #000;
+  font-size: 25px;
+  padding: 4px;
+  margin: 2px;
+}
+
+.scroller {
+  height: 850px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroller section {
+  scroll-snap-align: start;
 }

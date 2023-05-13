@@ -27,34 +27,48 @@ function App() {
     };
   }, [isCounting]);
   return (
-    <>
-      <NavBar />
-      <Slider />
-      <span className="section-title">مقالات پراستناد
-      </span>
-      <Articles />
-      <div className="countup" >
-        <div>
-          <CountUp start={0} end={683} duration={10} />
-          <p>تعداد کل مقالات</p>
+    <div className="scroller">
+
+      <section>
+        <NavBar />
+        <Slider />
+      </section>
+      <section>
+        <span className="section-title">مقالات پراستناد
+        </span>
+        <Articles />
+      </section>
+      <section>
+        <div className="countup" >
+          <span className="section-title">آمار و ارقام</span>
+          <div className="countup-main">
+            <div>
+              <CountUp start={0} end={683} duration={10} />
+              <p>تعداد کل مقالات</p>
+            </div>
+            <div>
+              <CountUp start={0} end={198} duration={5} />
+              <p>تعدادمقالات پراستناد</p>
+            </div>
+            <div>
+              <CountUp start={0} end={37} duration={10} />
+              <p>تعداد مقالات اخیر </p>
+            </div>
+          </div>
+              {/* <div ref={myRef}>
+        <CountUp start={0} end={100} duration={6} redraw={true} startOnMount={false} preserveValue={true} decimals={0} suffix={"%"}/>
+            </div> */}
         </div>
-        <div>
-          <CountUp start={0} end={198} duration={5} />
-          <p>تعدادمقالات پراستناد</p>
-        </div>
-        <div>
-          <CountUp start={0} end={37} duration={10} />
-          <p>تعداد مقالات اخیر </p>
-        </div>
-            {/* <div ref={myRef}>
-      <CountUp start={0} end={100} duration={6} redraw={true} startOnMount={false} preserveValue={true} decimals={0} suffix={"%"}/>
-    </div> */}
-      </div>
-      <span className="section-title">مقالات اخیر
-      </span>
-      <Articles />
-      <Footer />
-    </>
+      </section>
+      <section>
+        <span className="section-title">مقالات اخیر
+        </span>
+        <Articles />
+      </section>
+      <section>
+        <Footer />
+      </section>
+    </div>
   );
 }
 

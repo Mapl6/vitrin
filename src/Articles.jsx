@@ -11,10 +11,11 @@ const Articles = () => {
   return (
     <div className="articles">
 <Swiper
-        slidesPerView={3}
+        slidesPerView={4}
         grid={{
-          rows: 2,
+          rows: 1,
         }}
+        grabCursor={true}
         spaceBetween={30}
         pagination={{
           clickable: true,
@@ -24,10 +25,11 @@ const Articles = () => {
         
       >
           {data.map((item, index) => (
-        <SwiperSlide style={{width:"300px"}}>
+        <SwiperSlide style={{width:"300px",height:"600px"}}>
         <Card
           key={index}
           img={item.img}
+          prof={item.prof}
           title={item.title}
           g_scholar={item.g_scholar}
           reaseach={item.reseacher}

@@ -20,7 +20,7 @@ import { Pagination, Navigation } from "swiper";
 
 const Slider = () => {
   return (
-    <div className="sliders">
+    <div className="header">
       <Swiper style={{height:"500px"}}
         slidesPerView={1}
         spaceBetween={30}

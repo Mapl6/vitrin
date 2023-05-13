@@ -9,23 +9,23 @@ import { Grid, Pagination } from "swiper";
 
 const Articles = () => {
   return (
-    <div className="articles">
+    <div className="articles ">
 <Swiper
-        slidesPerView={4}
-        grid={{
-          rows: 1,
-        }}
+        slidesPerView={3}
+
         grabCursor={true}
+        
         spaceBetween={30}
         pagination={{
           clickable: true,
+          
         }}
-        modules={[Grid, Pagination]}
-        className="mySwiper"
+        modules={[Pagination]}
+        className="mySwiper container"
         
       >
           {data.map((item, index) => (
-        <SwiperSlide style={{width:"300px",height:"600px"}}>
+        <SwiperSlide >
         <Card
           key={index}
           img={item.img}

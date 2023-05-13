@@ -16,7 +16,7 @@ import img2 from "../assets/img/header-slide2.jpg";
 import img3 from "../assets/img/header-slide3.jpg";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import {Autoplay, Pagination, Navigation,EffectCoverflow } from "swiper";
 
 const Slider = () => {
   return (
@@ -25,11 +25,12 @@ const Slider = () => {
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
+        autoplay={true}
         pagination={{
           clickable: true,
         }}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation,Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>
@@ -45,23 +46,31 @@ const Slider = () => {
 
 
       <div className="top-slider">
-        <Swiper
-          slidesPerView={3}
-          centeredSlides={true}
-          spaceBetween={60}
-          grabCursor={true}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination]}
-          className="ab-slider"
-        >
-          <SwiperSlide style={{height:"150px",width:"160px",borderRadius:"5px"}}><img src={samanrashidiimg} /></SwiperSlide>
-          <SwiperSlide style={{height:"150px",width:"160px",borderRadius:"5px"}}><img src={amjadyimg} /></SwiperSlide>
-          <SwiperSlide style={{height:"150px",width:"160px",borderRadius:"5px"}}><img src={sadodinimg} /></SwiperSlide>
-          <SwiperSlide style={{height:"150px",width:"160px",borderRadius:"5px"}}><img src={meshaghiimg} /></SwiperSlide>
-          <SwiperSlide style={{height:"150px",width:"160px",borderRadius:"5px"}}><img src={msvalipourimg} /></SwiperSlide>
-          <SwiperSlide style={{height:"150px",width:"160px",borderRadius:"5px"}}><img src={fhormoziimg} /></SwiperSlide>
+      <Swiper
+      style={{width:"600px"}}
+        effect={"coverflow"}
+        grabCursor={true}
+        loop={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        autoplay={true}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination,Autoplay]}
+        className="mySwiper"
+      >
+          <SwiperSlide style={{  backgroundPosition: 'center',backgroundSize: 'cover',width: '250px'}}><img src={samanrashidiimg} /></SwiperSlide>
+          <SwiperSlide style={{  backgroundPosition: 'center',backgroundSize: 'cover',width: '250px'}}><img src={amjadyimg} /></SwiperSlide>
+          <SwiperSlide style={{  backgroundPosition: 'center',backgroundSize: 'cover',width: '250px'}}><img src={sadodinimg} /></SwiperSlide>
+          <SwiperSlide style={{  backgroundPosition: 'center',backgroundSize: 'cover',width: '250px'}}><img src={meshaghiimg} /></SwiperSlide>
+          <SwiperSlide style={{  backgroundPosition: 'center',backgroundSize: 'cover',width: '250px'}}><img src={msvalipourimg} /></SwiperSlide>
+          <SwiperSlide style={{  backgroundPosition: 'center',backgroundSize: 'cover',width: '250px'}}><img src={fhormoziimg} /></SwiperSlide>
 
           </Swiper>
         <span>

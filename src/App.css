@@ -17,13 +17,30 @@ html, body {
 body {
   background: #F7F7F5;
 }
-
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* .swiper-pagination{
+  padding: 40px !important;
+  margin: 40px !important;
+} */
 .section-title{
   font-size: xx-large;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
   color: #2E4E6E;
 }
+
 
 .scroller{
   height: 830px;
@@ -36,31 +53,40 @@ scroll-snap-type: y mandatory;
 
 /* Navbar */
 .navbar {
+  position: relative;
+  z-index: 10;
   background-color: #7AB2E2;
   width: 100%;
-  height: 100px;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+  height: 75px;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.5);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .navbar img {
-  width: 100px;
-  height: 90px;
+  width: 70px;
+  height: 60px;
   margin-top: 3px;
 }
-
+a{
+  text-decoration: none;
+  color: #fff;
+}
 .nav-link {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   list-style-type: none;
   padding: 0;
+
+
 }
 
 .nav-link li {
-  margin-right: 10px;
-  font-size: 18px;
+  margin-right: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  
 }
 /* end nav */
 /* header slider */
@@ -78,23 +104,15 @@ scroll-snap-type: y mandatory;
 }
 /* end header slider */
 /* top of sliders */
-.ab-slider {
-  width: 600px;
-  height: 150px;
-  margin-top: -200px;
-}
 
-.ab-slider img {
-  width: 160px;
-  height: 150px;
-  border-radius: 5px;
-}
 .top-slider {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 100%;
+  width: 100%;
+  margin-top: -100px;
 }
 
 .top-slider span {
@@ -104,14 +122,18 @@ scroll-snap-type: y mandatory;
 /* end top of sliders */
 /* Articles */
 .articles {
-  height: 650px;
-  padding: 24px;
+  padding: 30px;
   background-color: #2E4E6E;
 }
-
-.articles .swiper .swiper-slide {
-  border-radius: 15px ;
+.articles .swiper-wrapper{
+align-items: flex-end;
+  flex-direction: row !important;
 }
+.articles .swiper .swiper-slide {
+  height: calc((100% - 30px) / 2) !important;
+  overflow: hidden;
+}
+
 /*  end Articles */
 /* Cards */
 .card {
@@ -120,16 +142,19 @@ scroll-snap-type: y mandatory;
   color: #2E4E6E;
   display: flex;
   flex-direction: column;
-  justify-content:space-between ;
+  gap: 10px;
   width: 100%;
-  height: 100%;
+  height: 500px;
   border-radius: 15px;
+  overflow: hidden;
+  
 }
 
 .card-header {
   display: flex;
   flex-direction: column;
-  height: 40%;
+  height: 50%;
+  padding: 10px;
 }
 
 .card-bg {
@@ -147,23 +172,54 @@ scroll-snap-type: y mandatory;
   border: solid 6px #F7F7F5;
   margin-top: -40px;
   margin-right: 80px;
+ position: absolute;  
+ z-index: 0; 
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
 }
 
 .card-title{
   padding: 4px;
   margin: 2px;
-  font-size: 20px;
+  font-size: 16px;
+  text-align: left;
+
 }
 .card-name{
   color: #000;
   font-size: 25px;
-  padding: 4px;
-  margin: 2px;
+  margin-top: 16px;
 }
+.card:hover::before{
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+backdrop-filter:blur(3px) ;
+content: "";
+z-index: 1;
+
+}
+.card-icons{
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(200%);
+  z-index: 2;
+}
+.card:hover .card-icons{
+  transform: translate(-50%,-50%);
+  transition: transform 0.5s ease ;
+}
+/* .card:hover {
+filter: blur(2px);
+} */
 
 .card-icons img {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
 }
 /* end Cards */
 /* Countup */
@@ -177,7 +233,10 @@ scroll-snap-type: y mandatory;
   font-size: xx-large;
   padding: 30px;
 }
-
+.countup-main div:hover{
+  scale: 1.1;
+  transition: scale 0.5s ease;
+}
 .countup-main div {
   align-items: center;
   display: flex;
@@ -222,4 +281,34 @@ scroll-snap-type: y mandatory;
   width: 30px;
   height: 30px;
   margin-right: 10px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
 }

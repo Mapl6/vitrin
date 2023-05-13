@@ -7,38 +7,19 @@ import Articles from "./Articles";
 import Footer from "./Footer";
 import React, { useRef, useEffect, useState } from 'react';
 function App() {
-
-  const myRef = useRef(null);
-  const [isCounting, setIsCounting] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const top = myRef.current.getBoundingClientRect().top;
-      console.log(top);
-      const bottom = window.innerHeight;
-      console.log(bottom);
-      if (top < bottom ) {
-        setIsCounting(!isCounting);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [isCounting]);
   return (
     <div className="scroller">
 
-      <section>
+      <section id="navbar">
         <NavBar />
         <Slider />
       </section>
-      <section>
+      <section id="imp-articles">
         <span className="section-title">مقالات پراستناد
         </span>
         <Articles />
-      </section>
-      <section>
+      </section >
+      <section id="statistics">
         <div className="countup" >
           <span className="section-title">آمار و ارقام</span>
           <div className="countup-main">
@@ -60,7 +41,7 @@ function App() {
             </div> */}
         </div>
       </section>
-      <section>
+      <section id="rec-articles">
         <span className="section-title">مقالات اخیر
         </span>
         <Articles />

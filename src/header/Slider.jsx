@@ -7,9 +7,12 @@ import "swiper/css/navigation";
 
 import headerdata from "../assets/headerdata"
 
-import img1 from "../assets/img/header-slide1.jpg";
 import img2 from "../assets/img/header-slide2.jpg";
 import img3 from "../assets/img/header-slide3.jpg";
+import img5 from "../assets/img/5.jpg";
+import img6 from "../assets/img/6.jpg";
+import img7 from "../assets/img/7.jpg";
+import img8 from "../assets/img/8.jpg";
 
 // import required modules
 import {Autoplay, Pagination, Navigation,EffectCoverflow } from "swiper";
@@ -30,13 +33,22 @@ const Slider = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={img1} />
+          <img src={img5} />
         </SwiperSlide>
         <SwiperSlide>
           <img src={img2} />
         </SwiperSlide>
         <SwiperSlide>
           <img src={img3} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={img6} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={img7} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={img8} />
         </SwiperSlide>
       </Swiper>
 

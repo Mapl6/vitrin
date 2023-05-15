@@ -21,97 +21,97 @@ import mazadi from "./img/mazadi.jpg";
 export default[
 {
 img:samanrashidiimg,
-neme:"سامان رشیدی",
+neme:"دکتر سامان رشیدی ",
 title:"یک درصد برتر",
 
 },
 {
 img:amjadyimg,
-neme:"نیما امجدی",
+neme:"دکتر نیما امجدی ",
 title:"یک درصد برتر",
 
 },
 {
 img:sadodinimg,
-neme:"سیف الله سعدالدین",
+neme:"دکتر سیف الله سعدالدین ",
 title:"یک درصد برتر",
 
 },
 {
 img:meshaghiimg,
-neme:"مجید اسحاقی گردجی",
+neme:"دکتر مجید اسحاقی گردجی ",
 title:"یک درصد برتر",
 
 },
 {
 img:msvalipourimg,
-neme:"محمد صادق ولی پور",
+neme:"دکتر محمد صادق ولی پور ",
 title:"یک درصد برتر",
 
 },
 {
 img:fhormoziimg,
-neme:"فرامرز هرمزی",
+neme:"دکتر فرامرز هرمزی ",
 title:"یک درصد برتر",
 
 },
 {
 img:kheyroddinimg,
-neme:"علی خیرالدین",
+neme:"دکتر علی خیرالدین ",
 title:"دو درصد برتر",
 
 },
 {
 img:naderpour,
-neme:"حسین نادرپور",
+neme:"دکتر حسین نادرپور ",
 title:"دو درصد برتر",
 
 },
 {
 img:aasghari,
-neme:"علیرضا اصغری",
+neme:"دکتر علیرضا اصغری ",
 title:"دو درصد برتر",
 
 },
 {
 img:kamazaniimg,
-neme:"مهدی موسوی کمازانی",
+neme:"دکتر مهدی موسوی کمازانی ",
 title:"دو درصد برتر",
 
 },
 {
 img:aliaorouji,
-neme:"علی اصغر اروجی",
+neme:"دکتر علی اصغر اروجی ",
 title:"دو درصد برتر",
 
 },
 {
 img:mrajabi,
-neme:"مریم رجبی",
+neme:"دکتر مریم رجبی ",
 title:"دو درصد برتر",
 
 },
 {
 img:zmoravej,
-neme:"زهرا مروج",
+neme:"دکتر زهرا مروج ",
 title:"دو درصد برتر",
 
 },
 {
 img:danaie,
-neme:"محمد دانائی",
+neme:"دکتر محمد دانائی ",
 title:"دو درصد برتر",
 
 },
 {
 img:shakouri,
-neme:"میثم شکوری",
+neme:"دکتر میثم شکوری ",
 title:"دو درصد برتر",
 
 },
 {
 img:mazadi,
-neme:"محبوبه آزادی",
+neme:"دکتر محبوبه آزادی ",
 title:"دو درصد برتر",
 
 }

@@ -31,6 +31,7 @@ const Articles = () => {
           img={item.img}
           prof={item.prof}
           title={item.title}
+          link={item.link}
           g_scholar={item.g_scholar}
           reaseach={item.reseacher}
           email={item.email}

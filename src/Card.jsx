@@ -9,10 +9,10 @@ const Card = (props) => {
     <div className="card">
       <div className="card-header">
         <img className="card-bg" src={sardar} alt="" />
-        <img className="card-logo" src={props.img} alt="" />
+        <a href={props.website}><img className="card-logo" src={props.img} alt="" /></a>
       </div>
-      <div className="card-name">{props.prof}</div>
-      <div className="card-title">{props.title}</div>
+      <div className="card-name"><a href={props.website}>{props.prof}</a></div>
+      <div className="card-title"><a href={props.link}>{props.title}</a></div>
       <div className="card-icons">
         <a href={props.g_scholar}>
           <img src={gs} alt="" />
@@ -27,7 +27,7 @@ const Card = (props) => {
           <img src={ws} alt="" />
         </a>
         <a href={props.scopus}>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Scopus_logo.svg" alt="" />
+          <img style={{fill:"black"}} src="https://upload.wikimedia.org/wikipedia/commons/2/26/Scopus_logo.svg" alt="" />
         </a>
       </div>
     </div>
@@ -35,3 +35,6 @@ const Card = (props) => {
 };
 
 export default Card;
+
+
+

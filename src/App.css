@@ -182,13 +182,14 @@ align-items: flex-end;
  position: absolute;  
  z-index: 0; 
   left: 50%;
-  top: 60%;
+  top: calc(100%/1.8);
   transform: translate(-50%, -50%);
 }
 
 .card-title{
   padding: 4px;
   margin: 2px;
+
   font-size: 16px;
   text-align: left;
   color: #2E4E6E !important;

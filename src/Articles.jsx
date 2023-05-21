@@ -34,8 +34,8 @@ const Articles = () => {
           link={item.link}
           g_scholar={item.g_scholar}
           reaseach={item.reseacher}
-          email={item.email}
-          website={item.website}
+          // email={item.email}
+          // website={item.website}
           scopus={item.scopus}
         />
         </SwiperSlide>

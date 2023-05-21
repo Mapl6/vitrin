@@ -1,7 +1,8 @@
 import logo from "../assets/img/Logo.svg";
 const NavBar = () => {
-  return (
+  return (<>
     <div className="navbar">
+      <img className="logo" src={logo}/>
       <ul className="nav-link">
         <li>
           <a href="#navbar">خانه</a>
@@ -21,6 +22,7 @@ const NavBar = () => {
       </ul>
       {/* <img src={logo} /> */}
     </div>
+    </>
   );
 };
 export default NavBar;

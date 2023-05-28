@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 750) {
+      if (window.scrollY > 600) {
         setShowStickyNav(true);
       } else {
         setShowStickyNav(false);

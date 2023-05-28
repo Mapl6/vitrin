@@ -3,7 +3,8 @@
   src: local("BYekan"), url(./assets/BYekan.ttf) format("truetype");
 }
 
-html, body {
+html,
+body {
   position: relative;
   height: 100%;
   margin: 0;
@@ -15,7 +16,7 @@ html, body {
 }
 
 body {
-  background: #F7F7F5;
+  background: #f7f7f5;
 }
 .container {
   width: 100%;
@@ -34,13 +35,12 @@ body {
   padding: 40px !important;
   margin: 40px !important;
 } */
-.section-title{
+.section-title {
   font-size: xx-large;
   margin: 20px;
   padding: 10px;
-  color: #2E4E6E;
+  color: #2e4e6e;
 }
-
 
 /* .scroller{
   height: 100vh;
@@ -55,7 +55,7 @@ scroll-snap-type: y mandatory;
 .navbar {
   position: relative;
   z-index: 10;
-  background-color: #7AB2E2;
+  background-color: #7ab2e2;
   width: 100%;
   height: 75px;
   box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.5);
@@ -63,17 +63,17 @@ scroll-snap-type: y mandatory;
   justify-content: center;
   align-items: center;
 }
-.logo{
+.logo {
   width: 70px;
   height: 60px;
   position: absolute;
   right: 0;
 }
-.navbar a{
+.navbar a {
   text-decoration: none;
   color: #fff;
 }
-a{
+a {
   text-decoration: none;
 }
 .nav-link {
@@ -82,17 +82,14 @@ a{
   justify-content: flex-start;
   list-style-type: none;
   padding: 0;
-
-
 }
 
 .nav-link li {
   margin-right: 20px;
   font-size: 16px;
   cursor: pointer;
-  
 }
-.nav-link li:hover{
+.nav-link li:hover {
   scale: 1.2;
   transition: scale 0.5s ease;
 }
@@ -131,10 +128,10 @@ a{
 /* Articles */
 .articles {
   padding: 30px;
-  background-color: #2E4E6E;
+  background-color: #2e4e6e;
 }
-.articles .swiper-wrapper{
-align-items: flex-end;
+.articles .swiper-wrapper {
+  align-items: flex-end;
   flex-direction: row !important;
 }
 .articles .swiper .swiper-slide {
@@ -146,8 +143,8 @@ align-items: flex-end;
 /* Cards */
 .card {
   text-align: center;
-  background-color: #F7F7F5;
-  color: #2E4E6E;
+  background-color: #f7f7f5;
+  color: #2e4e6e;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -155,10 +152,8 @@ align-items: flex-end;
   height: 500px;
   border-radius: 15px;
   overflow: hidden;
-  
-  
 }
-.card:hover .card-logo{
+.card:hover .card-logo {
   scale: 1.3;
   transition: scale 0.5s ease;
 }
@@ -172,7 +167,7 @@ align-items: flex-end;
 .card-bg {
   width: 100%;
   height: 100%;
-  object-fit:cover;
+  object-fit: cover;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
@@ -181,34 +176,32 @@ align-items: flex-end;
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  border: solid 6px #F7F7F5;
+  border: solid 6px #f7f7f5;
   margin-top: -40px;
   margin-right: 80px;
- position: absolute;  
- z-index: 0; 
+  position: absolute;
+  z-index: 0;
   left: 50%;
-  top: calc(100%/1.8);
+  top: calc(100% / 1.8);
   transform: translate(-50%, -50%);
 }
 
-.card-title{
+.card-title {
   padding: 4px;
   margin: 2px;
 
   font-size: 16px;
   text-align: left;
-  color: #2E4E6E !important;
-
+  color: #2e4e6e !important;
 }
-.card-title a{
-  color: #2E4E6E !important;
-
+.card-title a {
+  color: #2e4e6e !important;
 }
-.card-name{
+.card-name {
   font-size: 25px;
   margin-top: 16px;
 }
-.card-name a{
+.card-name a {
   color: #000 !important;
 }
 /* .card:hover::before{
@@ -241,7 +234,7 @@ filter: blur(2px);
   width: 20px;
   height: 20px;
 }
-.card-icons{
+.card-icons {
   display: flex;
   justify-content: space-around;
 }
@@ -257,7 +250,7 @@ filter: blur(2px);
   font-size: xx-large;
   padding: 30px;
 }
-.countup-main div:hover{
+.countup-main div:hover {
   scale: 1.1;
   transition: scale 0.5s ease;
 }
@@ -269,16 +262,15 @@ filter: blur(2px);
   width: 30%;
   height: 250px;
   border-radius: 10px;
-  background-color: #7AB2E2;
+  background-color: #7ab2e2;
   margin: 2px;
   padding: 20px;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
-
 }
 /* end Countup */
 
 .footer {
-  background-color: #7AB2E2;
+  background-color: #7ab2e2;
   padding: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -295,14 +287,22 @@ filter: blur(2px);
   width: 100%;
 }
 
-.phone,.sms,.fax,.email,.time {
+.phone,
+.sms,
+.fax,
+.email,
+.time {
   margin: 10px;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.phone svg,.sms svg,.fax svg,.email svg,.time svg{
+.phone svg,
+.sms svg,
+.fax svg,
+.email svg,
+.time svg {
   width: 30px;
   height: 30px;
   margin-right: 10px;
@@ -338,8 +338,95 @@ filter: blur(2px);
   }
 }
 
-.toptitle{
-font-size: 20px !important;
-text-align: center !important;
-display: block;
+.toptitle {
+  font-size: 20px !important;
+  text-align: center !important;
+  display: block;
+}
+.sticky_nav {
+  background: transparent;
+  top: 50%;
+  left: 1%;
+  position: fixed;
+  z-index: 10;
+  height: 250px;
+  width: 45px;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sticky_nav::before {
+  content: "";
+
+  z-index: 15;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.2),
+    0 0 50px rgba(255, 255, 255, 0.2);
+  filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.sticky_nav li {
+  margin: 0;
+  z-index: 30;
+}
+.sticky_nav li:hover {
+  scale: 1.5;
+  transition: all 1s ease;
+  z-index: 35;
+  overflow: visible;
+}
+.sticky_nav:hover {
+  transition: all 0.5s ease;
+  overflow: visible;
+}
+.sticky_nav img {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.sticky_nav .nav-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.iconscontainer {
+  position: relative;
+  margin: 0 5em;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  z-index: 2000;
+
+}
+
+.iconscontainer .icon span {
+  position: absolute;
+  left: 90%;
+  margin-top: 10px;
+  padding: .55rem 1rem;
+  font-size: 1rem;
+  white-space: nowrap;
+  color: #000;
+  border-radius: 50px;
+  background-color: #fff;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  pointer-events: none;
+  user-select: none;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.iconscontainer .icon:hover span {
+  opacity: 0.8;
 }

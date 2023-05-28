@@ -6,10 +6,11 @@ import CountUp from "react-countup";
 import Articles from "./Articles";
 import Footer from "./Footer";
 import React, { useRef, useEffect, useState } from 'react';
+import StickyNav from "./StickyNav";
 function App() {
   return (
     <div className="scroller">
-
+<StickyNav/>
       <section id="navbar">
         <NavBar />
         <Slider />

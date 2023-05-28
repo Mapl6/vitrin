@@ -13,10 +13,14 @@ body {
   font-size: 14px;
   color: #fff;
   user-select: none;
+  scroll-behavior: smooth;
+  
 }
 
-body {
-  background: #f7f7f5;
+section {
+  height: 100%;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  
 }
 .container {
   width: 100%;
@@ -429,4 +433,44 @@ filter: blur(2px);
 
 .iconscontainer .icon:hover span {
   opacity: 0.8;
+}
+
+
+
+
+.absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-8xl {
+  font-size: 6rem;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.font-thin {
+  font-weight: 100;
+}
+
+.aspect-2-1 {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%;
+}
+
+.aspect-2-1 > * {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

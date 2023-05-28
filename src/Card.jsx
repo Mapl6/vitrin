@@ -3,17 +3,23 @@ import rg from "./assets/img/rg.png";
 import email from "./assets/img/email.png";
 import ws from "./assets/img/ws.png";
 import sardar from "./assets/img/sardar.jpg";
-import sc from "./assets/img/sc.png"
+import sc from "./assets/img/sc.png";
 
 const Card = (props) => {
   return (
     <div className="card">
       <div className="card-header">
         <img className="card-bg" src={sardar} alt="" />
-        <a href={props.website}><img className="card-logo" src={props.img} alt="" /></a>
+        <a href={props.website}>
+          <img className="card-logo" src={props.img} alt="" />{" "}
+        </a>
       </div>
-      <div className="card-name"><a href={props.website}>{props.prof}</a></div>
-      <div className="card-title"><a href={props.link}>{props.title}</a></div>
+      <div className="card-name">
+        <a href={props.website}>{props.prof}</a>
+      </div>
+      <div className="card-title">
+        <a href={props.link}>{props.title}</a>
+      </div>
       <div className="card-icons">
         <a href={props.g_scholar}>
           <img src={gs} alt="" />
@@ -21,6 +27,7 @@ const Card = (props) => {
         <a href={props.reaseach}>
           <img src={rg} alt="" />
         </a>
+
         {/* <a href={props.email}>
           <img src={email} alt="" />
         </a>
@@ -36,6 +43,3 @@ const Card = (props) => {
 };
 
 export default Card;
-
-
-

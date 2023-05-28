@@ -1,11 +1,11 @@
 const ToolTip = ({ title, children }) => {
-    return (
-      <div class="iconscontainer">
-        <div class="icon">
-          <span>{title}</span>
+  return (
+    <div class="iconscontainer">
+      <div class="icon">
+        <span>{title}</span>
         {children}
-        </div>
       </div>
-    )
-  }
-  export default ToolTip
+    </div>
+  );
+};
+export default ToolTip;

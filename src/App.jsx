@@ -43,15 +43,15 @@ function App() {
           <span className="section-title">آمار و ارقام</span>
           <div className="countup-main">
             <div>
-              <CountUp start={0} end={683} duration={10} />
+              <CountUp start={0} end={1763} duration={10} />
               <p>تعداد کل مقالات</p>
             </div>
             <div>
-              <CountUp start={0} end={198} duration={5} />
+              <CountUp start={0} end={490} duration={5} />
               <p>تعدادمقالات پراستناد</p>
             </div>
             <div>
-              <CountUp start={0} end={37} duration={10} />
+              <CountUp start={0} end={180} duration={10} />
               <p>تعداد مقالات اخیر </p>
             </div>
           </div>

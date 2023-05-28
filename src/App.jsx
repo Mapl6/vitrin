@@ -5,23 +5,41 @@ import CountUp from "react-countup";
 
 import Articles from "./Articles";
 import Footer from "./Footer";
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState } from "react";
 import StickyNav from "./StickyNav";
+
 function App() {
+  const [showStickyNav, setShowStickyNav] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 750) {
+        setShowStickyNav(true);
+      } else {
+        setShowStickyNav(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="scroller">
-<StickyNav/>
+      {showStickyNav && <StickyNav />}
       <section id="navbar">
         <NavBar />
         <Slider />
       </section>
       <section id="imp-articles">
-        <span className="section-title">مقالات پراستناد
-        </span>
+        <span className="section-title">مقالات پراستناد</span>
         <Articles />
-      </section >
+      </section>
       <section id="statistics">
-        <div className="countup" >
+        <div className="countup">
           <span className="section-title">آمار و ارقام</span>
           <div className="countup-main">
             <div>
@@ -37,14 +55,13 @@ function App() {
               <p>تعداد مقالات اخیر </p>
             </div>
           </div>
-              {/* <div ref={myRef}>
+          {/* <div ref={myRef}>
         <CountUp start={0} end={100} duration={6} redraw={true} startOnMount={false} preserveValue={true} decimals={0} suffix={"%"}/>
             </div> */}
         </div>
       </section>
       <section id="rec-articles">
-        <span className="section-title">مقالات اخیر
-        </span>
+        <span className="section-title">مقالات اخیر</span>
         <Articles />
       </section>
       <section>

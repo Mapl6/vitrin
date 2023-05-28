@@ -3,6 +3,7 @@ import rg from "./assets/img/rg.png";
 import email from "./assets/img/email.png";
 import ws from "./assets/img/ws.png";
 import sardar from "./assets/img/sardar.jpg";
+import sc from "./assets/img/sc.png"
 
 const Card = (props) => {
   return (
@@ -20,14 +21,14 @@ const Card = (props) => {
         <a href={props.reaseach}>
           <img src={rg} alt="" />
         </a>
-        <a href={props.email}>
+        {/* <a href={props.email}>
           <img src={email} alt="" />
         </a>
         <a href={props.website}>
           <img src={ws} alt="" />
-        </a>
+        </a> */}
         <a href={props.scopus}>
-          <img style={{fill:"black"}} src="https://upload.wikimedia.org/wikipedia/commons/2/26/Scopus_logo.svg" alt="" />
+          <img src={sc} alt="" />
         </a>
       </div>
     </div>

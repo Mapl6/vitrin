@@ -7,6 +7,7 @@ import Articles from "./Articles";
 import Footer from "./Footer";
 import React, { useRef, useEffect, useState } from "react";
 import StickyNav from "./StickyNav";
+import CountUpTabs from "./CountUpTabs";
 
 function App() {
   const [showStickyNav, setShowStickyNav] = useState(false);
@@ -41,20 +42,7 @@ function App() {
       <section id="statistics">
         <div className="countup">
           <span className="section-title">آمار و ارقام</span>
-          <div className="countup-main">
-            <div>
-              <CountUp start={0} end={1763} duration={10} />
-              <p>تعداد کل مقالات</p>
-            </div>
-            <div>
-              <CountUp start={0} end={490} duration={5} />
-              <p>تعدادمقالات پراستناد</p>
-            </div>
-            <div>
-              <CountUp start={0} end={180} duration={10} />
-              <p>تعداد مقالات اخیر </p>
-            </div>
-          </div>
+<CountUpTabs/>
           {/* <div ref={myRef}>
         <CountUp start={0} end={100} duration={6} redraw={true} startOnMount={false} preserveValue={true} decimals={0} suffix={"%"}/>
             </div> */}

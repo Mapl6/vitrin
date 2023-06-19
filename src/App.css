@@ -41,7 +41,6 @@ section {
   padding: 20px;
   color: #2e4e6e;
   background: #ece9e6;
-
   border-radius: 10px;
   color: #2e4e6e;
   margin-right: 0;
@@ -105,6 +104,7 @@ a {
   height: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
 }
 
 .header img {
@@ -267,7 +267,7 @@ filter: blur(2px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 30%;
+  width: 80%;
   height: 250px;
   border-radius: 10px;
   background: #2193b0;
@@ -276,6 +276,66 @@ filter: blur(2px);
   margin: 2px;
   padding: 20px;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.countup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  width: 1000px; /* Change this value to adjust the width of each CountUp container */
+  text-align: center;
+}
+
+.countup-container p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+
+.countup-container p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .countup-tabs {
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    flex-basis: 100%;
+    margin-top: 10px;
+  }
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  margin: 0px 10px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+.button-container button.active {
+  background-color: #457fca;
+  color: #fff;
+}
+
+.button-container button:hover {
+  background-color: #457fca;
+  color: #fff;
 }
 /* end Countup */
 
@@ -438,4 +498,45 @@ filter: blur(2px);
 
 .iconscontainer .icon:hover span {
   opacity: 0.8;
+}
+
+.tg-btn {
+  width: 300px;
+  padding: 20px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #f1f2f3;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tg-btn button {
+  width: 50%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tg-btn button.active {
+  color: #2e4e6e;
+}
+
+.tg-btn.active {
+  background-color: #2ecc71;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.tg-btn button:hover {
+  color: #fff;
+  background-color: #457fca;;
 }

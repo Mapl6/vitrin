@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { useState } from "react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -18,7 +18,9 @@ import img8 from "../assets/img/8.jpg";
 import { Autoplay, Pagination, Navigation, EffectCoverflow } from "swiper";
 
 const Slider = () => {
-  return (
+  const [slideToggle,setSlideToggle]=useState(true)
+
+  return (<>
     <div className="header">
       <Swiper
         style={{ height: "500px" }}
@@ -53,52 +55,113 @@ const Slider = () => {
         </SwiperSlide>
       </Swiper>
 
-      <div className="top-slider">
-        <Swiper
-          style={{ width: "600px", borderRadius: "10px" }}
-          effect={"coverflow"}
-          grabCursor={true}
-          loop={true}
-          centeredSlides={true}
-          slidesPerView={"auto"}
-          autoplay={true}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          }}
-          // pagination={true}
-          modules={[EffectCoverflow, Pagination, Autoplay]}
-          className="mySwiper"
-        >
-          {headerdata.map((item, index) => (
-            <SwiperSlide
-              style={{
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                width: "250px",
-                borderRadius: "20px",
-                boxShadow: "0px 15px 20px rgba(0, 0, 0, 0.1)",
-              }}
-            >
-              <img
+{slideToggle &&  <div className="top-slider">
+          <Swiper
+            style={{ width: "600px", borderRadius: "10px" }}
+            effect={"coverflow"}
+            grabCursor={true}
+            loop={true}
+            centeredSlides={true}
+            slidesPerView={"auto"}
+            autoplay={true}
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            }}
+            // pagination={true}
+            modules={[EffectCoverflow, Pagination, Autoplay]}
+            className="mySwiper"
+          >
+            {headerdata.map((item, index) => (
+              <SwiperSlide
                 style={{
-                  borderTopRightRadius: "15px",
-                  borderTopLeftRadius: "15px",
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  width: "250px",
+                  borderRadius: "20px",
+                  boxShadow: "0px 15px 20px rgba(0, 0, 0, 0.1)",
                 }}
-                src={item.img}
-                alt={item.title}
-              />
-              <span className="toptitle">{item.title}</span>
-              <br />
-              <span className="toptitle">{item.neme}</span>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+              >
+                <img
+                  style={{
+                    borderTopRightRadius: "15px",
+                    borderTopLeftRadius: "15px",
+                  }}
+                  src={item.img}
+                  alt={item.title}
+                />
+                <span className="toptitle">{item.title}</span>
+                <br />
+                <span className="toptitle">{item.neme}</span>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>}
+
+{!slideToggle &&  <div className="top-slider">
+          <Swiper
+            style={{ width: "600px", borderRadius: "10px" }}
+            effect={"coverflow"}
+            grabCursor={true}
+            loop={true}
+            centeredSlides={true}
+            slidesPerView={"auto"}
+            autoplay={true}
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            }}
+            // pagination={true}
+            modules={[EffectCoverflow, Pagination, Autoplay]}
+            className="mySwiper"
+          >
+            {headerdata.map((item, index) => (
+              <SwiperSlide
+                style={{
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  width: "250px",
+                  borderRadius: "20px",
+                  boxShadow: "0px 15px 20px rgba(0, 0, 0, 0.1)",
+                }}
+              >
+                <img
+                  style={{
+                    borderTopRightRadius: "15px",
+                    borderTopLeftRadius: "15px",
+                  }}
+                  src={item.img}
+                  alt={item.title}
+                />
+                <span className="toptitle">{item.title}</span>
+                <br />
+                <span className="toptitle">{item.neme}</span>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>}
     </div>
+    <div className="tg-btn">
+  <button
+    className={slideToggle ? "btn1 active" : "btn1"}
+    onClick={() => setSlideToggle(true)}
+  >
+    برترین ها
+  </button>
+  <button
+    className={!slideToggle ? "btn2 active" : "btn2"}
+    onClick={() => setSlideToggle(false)}
+  >
+    هیئت علمی
+  </button>
+</div>
+  </>
   );
 };
 export default Slider;

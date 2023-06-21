@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import headerdata from "../assets/headerdata";
+import headerdata2 from "../assets/headerdata2";
 
 import img2 from "../assets/img/header-slide2.jpg";
 import img3 from "../assets/img/header-slide3.jpg";
@@ -121,7 +122,7 @@ const Slider = () => {
             modules={[EffectCoverflow, Pagination, Autoplay]}
             className="mySwiper"
           >
-            {headerdata.map((item, index) => (
+            {headerdata2.map((item, index) => (
               <SwiperSlide
                 style={{
                   backgroundPosition: "center",

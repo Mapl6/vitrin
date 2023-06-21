@@ -26,7 +26,7 @@ title:"یک درصد برتر",
 
 },
 {
-img:amjadyimg,
+img:amjadyimg, 
 neme:"دکتر نیما امجدی ",
 title:"یک درصد برتر",
 

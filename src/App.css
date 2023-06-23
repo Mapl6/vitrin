@@ -13,6 +13,7 @@ body {
   font-size: 14px;
   color: #fff;
   user-select: none;
+  scroll-behavior:smooth ;
 }
 
 section {

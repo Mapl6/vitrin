@@ -13,13 +13,13 @@ const CountUpTabs = () => {
           className={activeButton === "total" ? "active" : ""}
           onClick={() => handleButtonClick("total")}
         >
-          دسته 1
+مقالات پژوهشی
         </button>
         <button
           className={activeButton === "popular" ? "active" : ""}
           onClick={() => handleButtonClick("popular")}
         >
-           دسته 2
+طرح های برون دانشگاهی (4سال اخیر)
         </button>
         <button
           className={activeButton === "recent" ? "active" : ""}
@@ -48,16 +48,16 @@ const CountUpTabs = () => {
         {activeButton === "popular" && (
           <>
             <div className="countup-container">
-              <CountUp start={0} end={490} duration={5} />
-              <p>تعدادمقالات پراستناد</p>
+              <CountUp start={0} end={381} duration={8} />
+              <p >مبلغ قراردادها  (میلیارد ریال)</p>
             </div>
             <div className="countup-container">
-              <CountUp start={0} end={345} duration={5} />
-              <p>تعدادمقالات پربازدید</p>
+              <CountUp start={0} end={253} duration={5} />
+              <p>تعداد طرح ها</p>
             </div>
             <div className="countup-container">
-              <CountUp start={0} end={23} duration={5} />
-              <p>مقالات جدید</p>
+              <CountUp start={0} end={229} duration={5} />
+              <p>تعداد مجریان قراردادها</p>
             </div>
           </>
         )}

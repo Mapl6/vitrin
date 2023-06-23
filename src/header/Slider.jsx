@@ -86,6 +86,7 @@ const Slider = () => {
                   boxShadow: "0px 15px 20px rgba(0, 0, 0, 0.1)",
                 }}
               >
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
                 <img
                   style={{
                     borderTopRightRadius: "15px",
@@ -97,6 +98,7 @@ const Slider = () => {
                 <span className="toptitle">{item.title}</span>
                 <br />
                 <span className="toptitle">{item.neme}</span>
+                </a>
               </SwiperSlide>
             ))}
           </Swiper>
@@ -132,6 +134,7 @@ const Slider = () => {
                   boxShadow: "0px 15px 20px rgba(0, 0, 0, 0.1)",
                 }}
               >
+               <a href={item.link} target="_blank" rel="noopener noreferrer">
                 <img
                   style={{
                     borderTopRightRadius: "15px",
@@ -140,9 +143,10 @@ const Slider = () => {
                   src={item.img}
                   alt={item.title}
                 />
-                <span className="toptitle">{item.title}</span>
+                {/* <span className="toptitle">{item.title}</span> */}
                 <br />
                 <span className="toptitle">{item.neme}</span>
+                </a>
               </SwiperSlide>
             ))}
           </Swiper>
@@ -153,13 +157,13 @@ const Slider = () => {
     className={slideToggle ? "btn1 active" : "btn1"}
     onClick={() => setSlideToggle(true)}
   >
-    برترین ها
+برترین های حوزه پژوهشی
   </button>
   <button
     className={!slideToggle ? "btn2 active" : "btn2"}
     onClick={() => setSlideToggle(false)}
-  >
-    هیئت علمی
+    >
+    برترین های حوزه فناوری
   </button>
 </div>
   </>

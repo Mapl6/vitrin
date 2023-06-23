@@ -501,7 +501,7 @@ filter: blur(2px);
 }
 
 .tg-btn {
-  width: 300px;
+  width: 340px;
   padding: 20px;
   margin: 0px auto;
   display: flex;
@@ -530,6 +530,7 @@ filter: blur(2px);
 
 .tg-btn .active {
   background-color: #457fca !important;
+  color: white;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
 

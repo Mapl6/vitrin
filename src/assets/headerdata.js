@@ -22,98 +22,98 @@ export default[
 {
 img:samanrashidiimg,
 neme:"دکتر سامان رشیدی ",
-title:"یک درصد برتر",
-
+title:"یک درصد برتر پژوهشگران برتر دانشگاه",
+link:"https://samanrashidi.profile.semnan.ac.ir/#about_me",
 },
 {
-img:amjadyimg, 
+img:amjadyimg,
 neme:"دکتر نیما امجدی ",
-title:"یک درصد برتر",
-
+title:"یک درصد برتر پژوهشگران برتر دانشگاه",
+link:"https://amjady.profile.semnan.ac.ir/#about_me",
 },
 {
 img:sadodinimg,
 neme:"دکتر سیف الله سعدالدین ",
-title:"یک درصد برتر",
-
+title:"یک درصد برتر پژوهشگران برتر دانشگاه",
+link:"https://ssadodin.profile.semnan.ac.ir/#about_me",
 },
 {
 img:meshaghiimg,
 neme:"دکتر مجید اسحاقی گردجی ",
-title:"یک درصد برتر",
-
+title:"یک درصد برتر پژوهشگران برتر دانشگاه",
+link:"https://meshaghi.profile.semnan.ac.ir/#about_me",
 },
 {
 img:msvalipourimg,
 neme:"دکتر محمد صادق ولی پور ",
-title:"یک درصد برتر",
-
+title:"یک درصد برتر پژوهشگران برتر دانشگاه",
+link:"https://msvalipour.profile.semnan.ac.ir/#about_me",
 },
 {
-img:fhormoziimg,
-neme:"دکتر فرامرز هرمزی ",
-title:"یک درصد برتر",
-
+    img:fhormoziimg,
+    neme:"دکتر فرامرز هرمزی ",
+    title:"یک درصد برتر پژوهشگران برتر دانشگاه",
+    link:"https://fhormozi.profile.semnan.ac.ir/#about_me",
 },
 {
 img:kheyroddinimg,
 neme:"دکتر علی خیرالدین ",
-title:"دو درصد برتر",
-
+title:"دو درصد برتر پژوهشگران برتر دانشگاه",
+link:"https://kheyroddin.profile.semnan.ac.ir/#about_me",
 },
 {
 img:naderpour,
 neme:"دکتر حسین نادرپور ",
-title:"دو درصد برتر",
-
+title:"دو درصد برتر پژوهشگران برتر دانشگاه",
+link:"https://naderpour.profile.semnan.ac.ir/#about_me",
 },
 {
 img:aasghari,
 neme:"دکتر علیرضا اصغری ",
-title:"دو درصد برتر",
-
+title:"دو درصد برتر پژوهشگران برتر دانشگاه",
+link:"https://aasghari.profile.semnan.ac.ir/#about_me",
 },
 {
 img:kamazaniimg,
 neme:"دکتر مهدی موسوی کمازانی ",
-title:"دو درصد برتر",
-
+title:"دو درصد برتر پژوهشگران برتر دانشگاه",
+link:"https://mmousavi.profile.semnan.ac.ir/#about_me",
 },
 {
 img:aliaorouji,
 neme:"دکتر علی اصغر اروجی ",
-title:"دو درصد برتر",
-
+title:"دو درصد برتر پژوهشگران برتر دانشگاه",
+link:"https://aliaorouji.profile.semnan.ac.ir/#about_me",
 },
 {
 img:mrajabi,
 neme:"دکتر مریم رجبی ",
-title:"دو درصد برتر",
-
+title:"دو درصد برتر پژوهشگران برتر دانشگاه",
+link:"https://mrajabi.profile.semnan.ac.ir",
 },
 {
 img:zmoravej,
 neme:"دکتر زهرا مروج ",
-title:"دو درصد برتر",
-
+title:"دو درصد برتر پژوهشگران برتر دانشگاه",
+link:"https://zmoravej.profile.semnan.ac.ir/#about_me",
 },
 {
-img:danaie,
-neme:"دکتر محمد دانائی ",
-title:"دو درصد برتر",
-
+    img:danaie,
+    neme:"دکتر محمد دانائی ",
+    title:"دو درصد برتر پژوهشگران برتر دانشگاه",
+    link:"https://danaie.profile.semnan.ac.ir/#about_me",
 },
 {
 img:shakouri,
 neme:"دکتر میثم شکوری ",
-title:"دو درصد برتر",
-
+title:"دو درصد برتر پژوهشگران برتر دانشگاه",
+link:"https://shakouri.profile.semnan.ac.ir/#about_me",
 },
 {
 img:mazadi,
 neme:"دکتر محبوبه آزادی ",
-title:"دو درصد برتر",
-
+title:"دو درصد برتر پژوهشگران برتر دانشگاه",
+link:"",
 }
 // {
 // img:,
@@ -123,3 +123,6 @@ title:"دو درصد برتر",
 // },
 
 ]
+
+
+

@@ -143,9 +143,12 @@ const Slider = () => {
                   src={item.img}
                   alt={item.title}
                 />
-                {/* <span className="toptitle">{item.title}</span> */}
+                <br />
                 <br />
                 <span className="toptitle">{item.neme}</span>
+                <br />
+                {/* <span className="toptitle">{item.title}</span> */}
+                <br />
                 </a>
               </SwiperSlide>
             ))}

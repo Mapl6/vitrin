@@ -163,8 +163,14 @@ const Slider = () => {
 برترین های حوزه پژوهشی
   </button>
   <button
-    className={!slideToggle ? "btn2 active" : "btn2"}
+    className={!slideToggle ? " " : ""}
     onClick={() => setSlideToggle(false)}
+    >
+      دانش آموختگان برتر
+  </button>
+  <button
+    className={!slideToggle ? "btn2 active" : "btn2"}
+    onClick={() => setSlideToggle("")}
     >
     برترین های حوزه فناوری
   </button>

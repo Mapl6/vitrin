@@ -17,9 +17,11 @@ import img8 from "../assets/img/8.jpg";
 
 // import required modules
 import { Autoplay, Pagination, Navigation, EffectCoverflow } from "swiper";
+import header3 from "../assets/header3";
+import header4 from "../assets/header4";
 
 const Slider = () => {
-  const [slideToggle,setSlideToggle]=useState(true)
+  const [slideToggle,setSlideToggle]=useState(1)
 
   return (<>
     <div className="header">
@@ -56,7 +58,7 @@ const Slider = () => {
         </SwiperSlide>
       </Swiper>
 
-{slideToggle &&  <div className="top-slider">
+{slideToggle==1 &&  <div className="top-slider">
           <Swiper
             style={{ width: "600px", borderRadius: "10px" }}
             effect={"coverflow"}
@@ -104,7 +106,7 @@ const Slider = () => {
           </Swiper>
         </div>}
 
-{!slideToggle &&  <div className="top-slider">
+{slideToggle==2 &&  <div className="top-slider">
           <Swiper
             style={{ width: "600px", borderRadius: "10px" }}
             effect={"coverflow"}
@@ -154,23 +156,129 @@ const Slider = () => {
             ))}
           </Swiper>
         </div>}
+{slideToggle==3 &&  <div className="top-slider">
+          <Swiper
+            style={{ width: "600px", borderRadius: "10px" }}
+            effect={"coverflow"}
+            grabCursor={true}
+            loop={true}
+            centeredSlides={true}
+            slidesPerView={"auto"}
+            autoplay={true}
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            }}
+            // pagination={true}
+            modules={[EffectCoverflow, Pagination, Autoplay]}
+            className="mySwiper"
+          >
+            {header3.map((item, index) => (
+              <SwiperSlide
+                style={{
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  width: "250px",
+                  borderRadius: "20px",
+                  boxShadow: "0px 15px 20px rgba(0, 0, 0, 0.1)",
+                }}
+              >
+               <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <img
+                  style={{
+                    borderTopRightRadius: "15px",
+                    borderTopLeftRadius: "15px",
+                  }}
+                  src={item.img}
+                  alt={item.title}
+                />
+                <br />
+                <br />
+                <span className="toptitle">{item.neme}</span>
+                <br />
+                {/* <span className="toptitle">{item.title}</span> */}
+                <br />
+                </a>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>}
+{slideToggle==4 &&  <div className="top-slider">
+          <Swiper
+            style={{ width: "600px", borderRadius: "10px" }}
+            effect={"coverflow"}
+            grabCursor={true}
+            loop={true}
+            centeredSlides={true}
+            slidesPerView={"auto"}
+            autoplay={true}
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            }}
+            // pagination={true}
+            modules={[EffectCoverflow, Pagination, Autoplay]}
+            className="mySwiper"
+          >
+            {header4.map((item, index) => (
+              <SwiperSlide
+                style={{
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  width: "250px",
+                  borderRadius: "20px",
+                  boxShadow: "0px 15px 20px rgba(0, 0, 0, 0.1)",
+                }}
+              >
+               <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <img
+                  style={{
+                    borderTopRightRadius: "15px",
+                    borderTopLeftRadius: "15px",
+                  }}
+                  src={item.img}
+                  alt={item.title}
+                />
+                <br />
+                <br />
+                <span className="toptitle">{item.neme}</span>
+                <br />
+                {/* <span className="toptitle">{item.title}</span> */}
+                <br />
+                </a>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>}
     </div>
     <div className="tg-btn">
   <button
-    className={slideToggle ? "btn1 active" : "btn1"}
-    onClick={() => setSlideToggle(true)}
+    className={slideToggle==1 ? "btn1 active" : "btn1"}
+    onClick={() => setSlideToggle(1)}
   >
 برترین های حوزه پژوهشی
   </button>
   <button
-    className={!slideToggle ? " " : ""}
-    onClick={() => setSlideToggle(false)}
+    className={slideToggle==3 ? "active" : ""}
+    onClick={() => setSlideToggle(3)}
     >
       دانش آموختگان برتر
   </button>
   <button
-    className={!slideToggle ? "btn2 active" : "btn2"}
-    onClick={() => setSlideToggle("")}
+    className={slideToggle==4 ? "active " : ""}
+    onClick={() => setSlideToggle(4)}
+    >
+      برترین های علوم انسانی، علوم اجتماعی و هنر
+  </button>
+  <button
+    className={slideToggle==2 ? "btn2 active" : "btn2"}
+    onClick={() => setSlideToggle(2)}
     >
     برترین های حوزه فناوری
   </button>

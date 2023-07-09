@@ -249,7 +249,7 @@ const Slider = () => {
                 <br />
                 <span className="toptitle">{item.neme}</span>
                 <br />
-                {/* <span className="toptitle">{item.title}</span> */}
+                <span className="toptitle">{item.title}</span>
                 <br />
                 </a>
               </SwiperSlide>

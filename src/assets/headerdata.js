@@ -111,9 +111,9 @@ link:"https://shakouri.profile.semnan.ac.ir/#about_me",
 },
 {
 img:mazadi,
-neme:"دکتر محبوبه آزادی ",
+neme:"دکتر محمد آزادی",
 title:"دو درصد برتر پژوهشگران برتر دانشگاه",
-link:"",
+link:"https://m-azadi.profile.semnan.ac.ir/#about_me",
 }
 // {
 // img:,

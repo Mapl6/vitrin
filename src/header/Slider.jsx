@@ -4,10 +4,8 @@ import { useState } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import headerdata from "../assets/headerdata";
 import headerdata2 from "../assets/headerdata2";
-
 import img2 from "../assets/img/header-slide2.jpg";
 import img3 from "../assets/img/header-slide3.jpg";
 import img5 from "../assets/img/5.jpg";

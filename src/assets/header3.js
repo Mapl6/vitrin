@@ -3,7 +3,7 @@ import ahoshang from "../assets/img/ahoshang.jpg";
 import hemat from "../assets/img/hemat.jpg";
 import sahadadi from "../assets/img/sahadadi.jpg";
 import heskandari from "../assets/img/heskandari.jpg";
-import hfarsi from "../assets/img/hfarsi.jpg";
+
 
 export default[
 {
@@ -36,12 +36,7 @@ link:""
     title:"",
     link:""
     },
-    {
-    img:hfarsi,
-    neme:"دکتر فارسی زاده",
-    title:"",
-    link:""
-    },
+
     
 
 ]

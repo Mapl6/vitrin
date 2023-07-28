@@ -10,17 +10,17 @@ title:"دانشیار دانشکده روان شناسی و علوم تربیت�
 link:"https://mnajafi.profile.semnan.ac.ir/#about_me"
 },
 {
+    img:hfarsi,
+    neme:"دکتر فارسی زاده",
+    title:"",
+    link:""
+        },
+{
 img:esmaielabounoori,
 neme:"دکتر اسمعیل ابونوری",
 title:"استاد پیشکسوت دانشکده اقتصاد، مدیریت و علوم اداری",
 link:"https://esmaielabounoori.profile.semnan.ac.ir/#about_me"
 },
-{
-    img:hfarsi,
-    neme:"دکتر فارسی زاده",
-    title:"",
-    link:""
-    },
 
 
 ]

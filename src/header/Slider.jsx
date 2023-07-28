@@ -209,10 +209,10 @@ const Slider = () => {
             style={{ width: "600px", borderRadius: "10px" }}
             effect={"coverflow"}
             grabCursor={true}
-            loop={true}
+            // loop={true}
+            autoplay={true}
             centeredSlides={true}
             slidesPerView={"auto"}
-            autoplay={true}
             coverflowEffect={{
               rotate: 50,
               stretch: 0,

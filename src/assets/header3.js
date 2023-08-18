@@ -32,7 +32,7 @@ link:""
     },
     {
     img:heskandari,
-    neme:"دکتر هادی اسکندر",
+    neme:" مهندس هادی اسکندر",
     title:"",
     link:""
     },
